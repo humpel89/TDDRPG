@@ -1,19 +1,14 @@
-package world.item.weapon;
+package world.item.equipment.weapon;
 
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import world.item.weapon.properties.Weapon;
+public class RangedWeaponTest {
 
-public class WeaponTest {
-
-	Weapon weapon;
-	
 	@Before
 	public void setUp() throws Exception {
-		weapon = new Weapon();
 	}
 
 	@Test

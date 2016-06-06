@@ -1,9 +1,9 @@
-package world.item.weapon.properties;
+package world.item.equipment.weapon;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import world.item.weapon.properties.AttackSpeed;
+import world.item.equipment.weapon.AttackSpeed;
 
 public class AttackSpeedTest {
 
@@ -12,19 +12,25 @@ public class AttackSpeedTest {
 	@Test
 	public void testGetAttackSpeedSlow() {
 		speed = AttackSpeed.SLOW;
-		assertEquals(0.5, speed.getAttackSpeed(), 0.001);
+		assertEquals(3.8, speed.getAttackSpeed(), 0.001);
 	}
 	
 	@Test
 	public void testGetAttackSpeedModerate() {
 		speed = AttackSpeed.MODERATE;
-		assertEquals(1.0, speed.getAttackSpeed(), 0.001);
+		assertEquals(2.8, speed.getAttackSpeed(), 0.001);
 	}
 	
 	@Test
 	public void testGetAttackSpeedFast() {
 		speed = AttackSpeed.FAST;
-		assertEquals(2.0, speed.getAttackSpeed(), 0.001);
+		assertEquals(1.8, speed.getAttackSpeed(), 0.001);
 	}
 	
+	@Test
+	public void testToString(){
+		speed = AttackSpeed.FAST;
+		System.out.println(speed);
+		assertEquals("FAST", speed.toString());
+	}
 }
