@@ -1,9 +1,8 @@
-import static org.junit.Assert.*;
+package world.item.weapon.properties;
+import static org.junit.Assert.assertEquals;
 
-import org.junit.Before;
 import org.junit.Test;
 
-import world.item.weapon.WeaponType;
 import world.item.weapon.properties.AttackSpeed;
 
 public class AttackSpeedTest {
