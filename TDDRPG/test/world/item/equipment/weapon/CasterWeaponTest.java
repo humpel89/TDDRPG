@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class CasterWeaponTest {
-
+	
 	@Before
 	public void setUp() throws Exception {
 	}

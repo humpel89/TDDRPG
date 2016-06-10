@@ -33,7 +33,7 @@ public abstract class WeaponImpl extends EquipmentImpl implements Weapon {
 
 	@Override
 	public boolean hasRangedAttack() {
-		return weaponType.isRanged();
+		return true;
 	}
 
 }

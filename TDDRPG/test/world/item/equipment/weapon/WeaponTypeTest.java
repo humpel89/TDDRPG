@@ -25,4 +25,9 @@ public class WeaponTypeTest {
 		assertEquals(3.8, axe.getBaseDamage(), 0.001);
 	}
 
+	@Test
+	public void testGetAttackSpeed() {
+		assertEquals(AttackSpeed.SLOW, axe.getAttackSpeed());
+	}
+	
 }
